@@ -12,32 +12,35 @@ const AddAnimal = (props) => {
 
     return(
         <div>
-        {/* <form onSubmit={}>
+        <form >
             <label htmlFor="name">Name</label>
-            <input onChange={}
+            <input 
+                    // onChange={}
                     type="text"
-                    value={}
+                    // value={}
                     placeholder="name"
                     name="name"
                     required>
             </input>
             <label htmlFor="Sound">Sound</label>
-            <input onChange={}
+            <input 
+                    // onChange={}
                     type="text"
-                    value={}
+                    // value={}
                     placeholder="sound"
                     name="sound"
                     required>
             </input>
             <label htmlFor="classification">Classification</label>
-            <input onChange={}
+            <input 
+                    // onChange={}
                     type="text"
-                    value={}
+                    // value={}
                     placeholder="classification"
                     required>
             </input>
             <button>Submit</button>
-        </form> */}
+        </form>
         </div>
     )
 

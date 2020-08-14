@@ -20,12 +20,12 @@ export default function Login(props) {
     const handleSubmit = (e) => {
         e.preventDefault();
         axios
-            .post('http://localhost:5000/api/login', login)
-            .then(res =>{ 
-                console.log(res)
-                window.localStorage.setItem('token', res.data.payload)
-            });
-
+        .post('http://localhost:5000/api/login', login)
+        .then(res =>{ 
+            console.log(res)
+            window.localStorage.setItem('token', res.data.payload)
+         })
+        
     }
 
     return (
@@ -38,7 +38,7 @@ export default function Login(props) {
                 value={login.username}
                 onChange={handleChange}
                 className='input'
-                ></input>
+                />
 
             <input 
                 type='text'
@@ -46,8 +46,8 @@ export default function Login(props) {
                 value={login.password}
                 onChange={handleChange}
                 className='input'
-                ></input>
-            <button >Login</button> 
+                />
+            <button>Login</button> 
             </form>  
         </div>
     )
